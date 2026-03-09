@@ -25,21 +25,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="운명을 엿볼 시간이에요."
+        android:text="성별을 선택해주세요."
         android:textColor="@color/white"
         android:layout_gravity="center"/>
-
-    <EditText
-        android:id="@+id/ageEditid"
-        android:layout_width="257dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:imeOptions="actionDone"
-        android:singleLine="true"
-        android:layout_marginTop="35dp"
-        android:background="@color/white"
-        android:hint="나이을 입력해주세요." />
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -104,18 +92,47 @@
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/cloud" />
 
+        <ImageButton
+            android:id="@+id/btnFemale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/gender_button_selector"
+            android:src="@drawable/ic_female"
+            android:scaleType="centerInside"
+            android:padding="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/btnMale"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <ImageButton
+            android:id="@+id/btnMale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/gender_button_selector"
+            android:src="@drawable/ic_male"
+            android:scaleType="centerInside"
+            android:padding="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnFemale"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="60dp"
-            android:text="Button"
+            android:text="이전"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </LinearLayout>
