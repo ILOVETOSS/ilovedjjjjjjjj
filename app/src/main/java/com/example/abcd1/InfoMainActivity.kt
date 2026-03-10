@@ -8,25 +8,15 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.abcd1.databinding.ActivityAgeBinding
 import com.example.abcd1.databinding.ActivityInfoBinding
+import com.example.abcd1.databinding.ActivityMaininfoBinding
 import com.example.abcd1.databinding.ActivitySexBinding
 import com.example.abcd1.databinding.ActivityYearBinding
 
-class sexinfoActivity : AppCompatActivity() {
+class InfoMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val binding = ActivitySexBinding.inflate(layoutInflater)
+        val binding = ActivityMaininfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-        binding.btnMale.setOnClickListener {
-            val intent = Intent(this, YearActivity::class.java)
-            startActivity(intent)
-        }
-        binding.btnFemale.setOnClickListener {
-            val intent = Intent(this, YearActivity::class.java)
-            startActivity(intent)
-
-        }
     }
 }

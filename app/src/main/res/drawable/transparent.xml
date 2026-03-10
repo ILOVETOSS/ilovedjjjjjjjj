@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="TransparentTimePicker" parent="Theme.AppCompat.Light">
         <item name="android:numbersBackgroundColor">#00000000</item>
 
@@ -11,6 +11,5 @@
 
         <item name="android:textColorSecondary">#80FFFFFF</item>
     </style>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-</resources>
+
+</selector>

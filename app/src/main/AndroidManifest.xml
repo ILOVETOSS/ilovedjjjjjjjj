@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TimeActivity"/>
+        <activity android:name=".InfoMainActivity"/>
+        <activity android:name=".YearActivity"/>
         <activity android:name=".sexinfoActivity"/>
         <activity android:name=".ageinfoActivity"/>
         <activity

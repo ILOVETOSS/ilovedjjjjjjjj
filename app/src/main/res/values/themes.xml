@@ -1,9 +1,22 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Abcd1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <style name="Base.Theme.Abcd1" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.Abcd1" parent="Base.Theme.Abcd1" />
+
+    <style name="MyTransparentClock" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#80FFFFFF</item>
+
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorAccent">#FFFFFF</item>
+
+        <item name="colorPrimary">#FFFFFF</item>
     </style>
 
-    <style name="Theme.Abcd1" parent="Base.Theme.Abcd1" />
+    <style name="ClockStyleOnly" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:headerBackground">@android:color/transparent</item>
+        <item name="android:numbersBackgroundColor">@android:color/transparent</item>
+    </style>
 </resources>
