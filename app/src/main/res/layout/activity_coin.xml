@@ -8,18 +8,13 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/moonbtn"
+        android:id="@+id/back"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="right"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/moon"/>
+        android:src="@drawable/moon" />
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:src="@drawable/tarot"
-        android:layout_gravity="center"/>
     <ImageView
         android:layout_width="100dp"
         android:layout_height="50dp"
@@ -29,67 +24,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daily Tarot Soul Card"
-        android:paddingStart="20dp"
-        android:textColor="@color/white" />
-    <ImageButton
-        android:id="@+id/dailyTarot"
-        android:layout_width="300dp"
-        android:layout_height="130dp"
+        android:text="달 충전"
         android:layout_gravity="center"
-        android:src="@drawable/daily_tarot_soul_card"
-        android:layout_marginTop="10dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Daily Tarot List"
-        android:layout_marginTop="15dp"
         android:paddingStart="20dp"
         android:textColor="@color/white" />
-
-    <HorizontalScrollView
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:paddingStart="20dp"
-        android:layout_marginTop="20dp"
-        android:scrollbars="none">
-        <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="200dp"
-            android:layout_height="150dp"
-            android:layout_marginEnd="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/fruit_tarot" />
-
-        <ImageView
-            android:id="@+id/image2"
-            android:layout_width="200dp"
-            android:layout_height="300dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/love_tarot" />
-
-    </LinearLayout>
-    </HorizontalScrollView>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daily Master"
+        android:text="현재 보유중인 달"
+        android:layout_gravity="center"
         android:paddingStart="20dp"
         android:textColor="@color/white" />
 
     <ImageView
-        android:id="@+id/dailyMaster"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="130dp"
-        android:src="@drawable/daily_master"/>
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/moon"
+        android:layout_gravity="center"/>
+
+
+
+
+
+
 
 
 
@@ -163,6 +121,14 @@
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/cloud" />
 
+        <ListView
+            android:layout_width="405dp"
+            android:layout_height="177dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

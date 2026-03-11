@@ -18,5 +18,11 @@ class InfoMainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         val binding = ActivityMaininfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        binding.button.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -20,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".CoinActivity"/>
+        <activity android:name=".DailyTarotActivity"/>
         <activity android:name=".TimeActivity"/>
         <activity android:name=".InfoMainActivity"/>
         <activity android:name=".YearActivity"/>
@@ -27,7 +31,7 @@
         <activity android:name=".ageinfoActivity"/>
         <activity
             android:name=".infoActivity"/>
-        <activity android:name=".MainActivity"/>
+
 
     </application>
 
